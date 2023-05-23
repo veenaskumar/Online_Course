@@ -17,6 +17,10 @@ const mongoose=require('mongoose');
         type:String,
         required:true,
     },
+    field:{
+        type:String,
+        required:true,
+    },
 
     description:{
         type:String,

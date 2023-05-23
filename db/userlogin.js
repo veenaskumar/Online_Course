@@ -1,4 +1,7 @@
 const mongoose=require('mongoose');
+
+const Joi = require("joi");
+const passwordComplexity = require("joi-password-complexity");
 mongoose.connect('mongodb://127.0.0.1:27017/wtproject')
 .then(()=>console.log('mongodb conneted........'))
 .catch((err)=>console.log(err));
@@ -10,6 +13,7 @@ const Loginschema= new mongoose.Schema({
     },
     password:{
         type:String,
+        unique:true,
         required:true,
     },
     email:{
@@ -20,3 +24,14 @@ const Loginschema= new mongoose.Schema({
 
 const Login=mongoose.model('login',Loginschema);
 module.exports=Login
+
+const validate = (data) => {
+	const schema = Joi.object({
+		name: Joi.string().required().label("First Name"),
+		email: Joi.string().email().required().label("Email"),
+		password: passwordComplexity().required().label("Password"),
+	});
+	return schema.validate(data);
+};
+
+module.exports = { Login, validate };
