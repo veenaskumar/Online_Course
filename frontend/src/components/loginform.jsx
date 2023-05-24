@@ -1,13 +1,16 @@
 import React,{useState,useEffect} from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import {IoMdContact} from 'react-icons/io'
 // import {AiOutlineMail} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 import { date } from 'joi'
+import Signup from '../pages/signup'
 function Loginform() {
     const [name,setname]=useState('')
     const [password,setpassword]=useState('')
     const[data,setdata]=useState('')
+    const navigate=useNavigate();
     function handleSubmit(){
 
 
@@ -27,8 +30,8 @@ function Loginform() {
            .then((res)=>{
             setdata(res)
             console.log(res.message)
-            if(res.message==='User created successfully'){
-            Navigate('/loginform')
+            if(res.message==='Success'){
+            navigate('/home')
             // console.log('hi')
         }
     })
@@ -69,11 +72,14 @@ function Loginform() {
                     <RiLockPasswordFill />
                 </div> */}  
                 {
-                    data.message ==="password incorrect" && "User doesn't exists" && <p>{data.message}</p>
+                     <p>{data.message}</p>
                 }
                 
                 <div className='border w-[200px] text-center rounded-full py-[8px] bg-sky-600 hover:bg-sky-900 text-white font-bold'>
                     <input type='button' value="Login" className='cursor-pointer' onClick={()=> handleSubmit()}/>
+                </div>
+                <div className='text-[13px] font-light flex gap-[0.3rem] decoration-none'>Don't You are a member 
+                <Link to ="/signup" className='text-sky-600 text-[13px] cursor-pointer'>Sign Up</Link>
                 </div>
 
                 {/* <div>{name}</div> */}

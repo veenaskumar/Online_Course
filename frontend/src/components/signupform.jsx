@@ -38,8 +38,9 @@ function Signupform() {
            .then((res) => res.json())
             .then((res)=>{
                 console.log(res.message)
+                setdata(res)
                 if(res.message==='User created successfully'){
-                naviagte('/loginform')
+                naviagte('/home')
                 // console.log('hi')
             }
         })
@@ -79,6 +80,9 @@ function Signupform() {
                     <input type="password" name="confirm_password" id="confirm_password" placeholder='Confirm Password' className='w-[492px] placeholder:text-[15px] placeholder:indent-[10px] font-semibold' />
                     <RiLockPasswordFill />
                 </div> */}  
+                {
+                    <p>{data.message}</p>
+                }
                 
                 <div className='border w-[200px] text-center rounded-full py-[8px] bg-sky-600 hover:bg-sky-900 text-white font-bold'>
                     <input type='button' value="Create account" className='cursor-pointer' onClick={()=> handleSubmit()}/>
