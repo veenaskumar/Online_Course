@@ -4,6 +4,7 @@ import Signupform from '../components/signupform'
 import '../stylesheet/signup.css'
 
 function Signup() {
+    
     return (
         <div className='flex flex-col justify-center px-[60px]'>
             <Navbar />
