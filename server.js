@@ -1,9 +1,12 @@
 const express=require('express');
 const app= express();
+const cors=require('cors')
 const router=require('./route/route')
 const user=require('./route/userroute')
 // const user=require('./route/adminroute')
 
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 

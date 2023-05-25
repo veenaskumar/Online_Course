@@ -6,8 +6,10 @@ const insert=async(req,res)=>{
 		const { error } = validate(req.body);
 		if (error)
 			return res.status(400).send({ message: error.details[0].message });
+    console.log(req.body);
 
 		const user = await Login.findOne({ email: req.body.email });
+    console.log(typeof(req.body.name))
 		if (user){
 			return res
 				.status(409)
@@ -24,8 +26,8 @@ const insert=async(req,res)=>{
                 res.status(201).send({ message: "User created successfully" });
             }
             } catch (err) {
-
          res.status(400).send({ message:"something went wrong"});
+         console.log(err);
 	}
     
 
@@ -36,7 +38,7 @@ const load=async(req,res)=>{
     try{
         const check=await Login.findOne({name:req.body.name});
    if(check.name===req.body.name && check.password===req.body.password){
-    res.send("home");
+    res.send({message:"Success"});
    }
 else if(check.name===req.body.name && check.password!=req.body.password){
     res.send({message:"password incorrect"});

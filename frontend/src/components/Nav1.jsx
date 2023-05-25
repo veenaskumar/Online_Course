@@ -11,9 +11,9 @@ function Nav1() {
     <Container>
     <img src={ALogo} alt="" id="lo"/>    
       <Nav className="ms-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Nav.Link href="./home">Home</Nav.Link>
+        <Nav.Link href="./video">All Courses</Nav.Link>
+        <Nav.Link href="/">logout</Nav.Link>
       </Nav>
     </Container>
   </Navbar>

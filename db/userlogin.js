@@ -13,7 +13,6 @@ const Loginschema= new mongoose.Schema({
     },
     password:{
         type:String,
-        unique:true,
         required:true,
     },
     email:{
@@ -27,7 +26,7 @@ module.exports=Login
 
 const validate = (data) => {
 	const schema = Joi.object({
-		name: Joi.string().required().label("First Name"),
+		name: Joi.string().required().label("Name"),
 		email: Joi.string().email().required().label("Email"),
 		password: passwordComplexity().required().label("Password"),
 	});

@@ -1,8 +1,22 @@
 const Lecture=require('../db/lectures');
 
 const create1=async(req,res)=>{
-  const t=await Lecture.create(req.body)
-  res.status(201).json(t)    
+    try{
+    const data={
+        id:req.body.id,
+        video:req.body.video,
+        name:req.body.name,
+        field:req.body.field,
+        description:req.body.description,
+    }
+    await Lecture.insertMany(data)
+  
+    res.status(201).send({ message: "inserted" });  
+}
+ catch (err) {
+res.status(400).send({ message:"something went wrong"});
+console.log(err);
+}   
 }
 
 const getlecture=async(req,res)=>{

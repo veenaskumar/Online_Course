@@ -4,6 +4,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
 // import {RiLockPasswordFill} from 'react-icons/ri'
 import {useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import loginform from './loginform'
 
 // import { response } from 'express';
@@ -47,16 +48,19 @@ function Signupform() {
      }
     
     return (
+        <div className='flex items-center justify-between'>
             <div className='flex flex-col justify-evenly gap-[1rem]  py-[30px] max-w-[800px]'>
             <p className='text-slate-500 tracking-normal font-semibold ' id='pick_up'>START A NEW PATH</p>
             <h1 className='text-2xl font-bold'>Create new account</h1>
-            <p className='text-[13px] font-light'>Already A Member? <span className='text-sky-600 text-[13px] cursor-pointer'>Log In</span></p>
+            <div className='text-[13px] font-light flex gap-[0.3rem] decoration-none'>Already a Memeber
+                <Link to ="/" className='text-sky-600 text-[13px] cursor-pointer'>Login</Link>
+                </div>
             <form>  
             <div className='flex flex-col justify-evenly gap-[2rem]'>
                 <div className='flex gap-[2rem]'>
                    
-                    <div className='flex flex-row  items-center gap-[0.5rem] rounded-lg border border-blue-600 py-[10px] px-[10px]'>
-                    <input type='text' name='fname' placeholder='First Name' id='fname' className=' placeholder:text-[15px] placeholder:indent-[10px] font-semibold' value={name} onChange={(e)=>{setname(e.target.value)}}/>
+                    <div className='flex flex-row  items-center gap-[0.5rem] rounded-lg border border-blue-600 py-[10px] px-[10px]  w-[560px]'>
+                    <input type='text' name='fname' placeholder='First Name' id='fname' className='w-[492px] placeholder:text-[15px] placeholder:indent-[10px] font-semibold' value={name} onChange={(e)=>{setname(e.target.value)}}/>
                     <IoMdContact />
                 
                 
@@ -95,6 +99,11 @@ function Signupform() {
            
 
         </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRi0KiRgw9zzSVoVx5vgltV2tD1ZluK8c9Jg&usqp=CAU" alt="" height={"700px"} width={"500px"}/>
+        </div>
+        </div>
+            
         
        
         
