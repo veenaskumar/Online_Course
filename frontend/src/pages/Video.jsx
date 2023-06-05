@@ -1,4 +1,3 @@
-
 import React,{useState,useEffect} from 'react'
 import   Video_details from '../components/video_details'
 import Nav1 from '../components/Nav1';

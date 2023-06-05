@@ -6,7 +6,6 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Home from './pages/Home'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AdminUpload from './pages/adminupload';
-import Video_details from './components/video_details';
 import Video from './pages/Video';
 function App() {
   return (
