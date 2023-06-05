@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.2f816c3e.css",
-    "main.js": "/frontend/static/js/main.b6722fab.js",
-    "static/js/787.cda612ba.chunk.js": "/frontend/static/js/787.cda612ba.chunk.js",
-    "static/media/kec-logo2-transformed.png": "/frontend/static/media/kec-logo2-transformed.2311f45a321f42fbc1af.png",
-    "static/media/systematic_approach.png": "/frontend/static/media/systematic_approach.2072e7a0402827249653.png",
-    "static/media/instructor.png": "/frontend/static/media/instructor.95721fda1e9c253abd67.png",
-    "static/media/proctored_exam.png": "/frontend/static/media/proctored_exam.41fbaa7193cda40c9531.png",
-    "static/media/learning-vs-training-cover.webp": "/frontend/static/media/learning-vs-training-cover.1cf9414dd11138089d6f.webp",
-    "static/media/assignments.png": "/frontend/static/media/assignments.a8addb7f81d95902f81d.png",
-    "static/media/local_chapter.png": "/frontend/static/media/local_chapter.d856b61b898ca9db13ab.png",
-    "index.html": "/frontend/index.html",
-    "main.2f816c3e.css.map": "/frontend/static/css/main.2f816c3e.css.map",
-    "main.b6722fab.js.map": "/frontend/static/js/main.b6722fab.js.map",
-    "787.cda612ba.chunk.js.map": "/frontend/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/Online_course/static/css/main.2f816c3e.css",
+    "main.js": "/Online_course/static/js/main.718d5f20.js",
+    "static/js/787.cda612ba.chunk.js": "/Online_course/static/js/787.cda612ba.chunk.js",
+    "static/media/kec-logo2-transformed.png": "/Online_course/static/media/kec-logo2-transformed.2311f45a321f42fbc1af.png",
+    "static/media/systematic_approach.png": "/Online_course/static/media/systematic_approach.2072e7a0402827249653.png",
+    "static/media/instructor.png": "/Online_course/static/media/instructor.95721fda1e9c253abd67.png",
+    "static/media/proctored_exam.png": "/Online_course/static/media/proctored_exam.41fbaa7193cda40c9531.png",
+    "static/media/learning-vs-training-cover.webp": "/Online_course/static/media/learning-vs-training-cover.1cf9414dd11138089d6f.webp",
+    "static/media/assignments.png": "/Online_course/static/media/assignments.a8addb7f81d95902f81d.png",
+    "static/media/local_chapter.png": "/Online_course/static/media/local_chapter.d856b61b898ca9db13ab.png",
+    "index.html": "/Online_course/index.html",
+    "main.2f816c3e.css.map": "/Online_course/static/css/main.2f816c3e.css.map",
+    "main.718d5f20.js.map": "/Online_course/static/js/main.718d5f20.js.map",
+    "787.cda612ba.chunk.js.map": "/Online_course/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f816c3e.css",
-    "static/js/main.b6722fab.js"
+    "static/js/main.718d5f20.js"
   ]
 }
