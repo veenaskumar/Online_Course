@@ -1,6 +1,4 @@
 import React from 'react'
-import { FaPhoneAlt } from "react-icons/fa"
-import { FaMailBulk } from "react-icons/fa"
 function Video_details(props) {
     
     return (

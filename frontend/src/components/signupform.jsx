@@ -1,11 +1,10 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import {IoMdContact} from 'react-icons/io'
 import {AiOutlineMail} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
 // import {RiLockPasswordFill} from 'react-icons/ri'
 import {useNavigate} from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import loginform from './loginform'
 
 // import { response } from 'express';
 // import { text } from 'express'   
