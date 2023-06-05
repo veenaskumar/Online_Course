@@ -4,7 +4,6 @@ import {IoMdContact} from 'react-icons/io'
 // import {AiOutlineMail} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
 import { Link } from 'react-router-dom'
-import { date } from 'joi'
 import Signup from '../pages/signup'
 function Loginform() {
     const [name,setname]=useState('')
